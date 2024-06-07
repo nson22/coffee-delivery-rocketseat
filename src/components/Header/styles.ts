@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   display: flex;
-  max-width: 70rem;
   align-items: center;
   justify-content: space-between;
 

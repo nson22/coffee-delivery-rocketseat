@@ -5,7 +5,6 @@ export const IntroMainContainer = styled.div`
   align-items: center;
   height: 544px;
   justify-content: space-between;
-  max-width: 70rem;
 `;
 
 export const IntroTitle = styled.h1`

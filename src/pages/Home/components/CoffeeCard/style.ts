@@ -94,6 +94,7 @@ export const CoffeeCardQuantityContainer = styled.div`
     background: ${(props) => props.theme["base-button"]};
     color: ${(props) => props.theme["purple"]};
     line-height: 0;
+    cursor: pointer;
   }
 
   span {
@@ -111,4 +112,5 @@ export const CoffeeCardAddItem = styled.button`
   background: ${(props) => props.theme["purple"]};
   line-height: 0;
   color: ${(props) => props.theme["base-card"]};
+  cursor: pointer;
 `;
