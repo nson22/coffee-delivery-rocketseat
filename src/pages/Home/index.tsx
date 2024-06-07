@@ -1,7 +1,15 @@
 import { Coffee, Package, ShoppingCart, Timer } from "@phosphor-icons/react";
 import ImageMakert from "../../assets/cd-image-market.svg";
-import CafeExpresso from "../../assets/cd-expresso.svg";
-import { IntroMainContainer, IntroItems, IntroItemsGrid, IntroShoppingCartIcon, IntroSubtitle, IntroTitle, CoffeeCard, CoffeeCardImage, CoffeeCardTag, CoffeeCardContainer } from "./styles";
+import {
+  IntroMainContainer,
+  IntroItems,
+  IntroItemsGrid,
+  IntroShoppingCartIcon,
+  IntroSubtitle,
+  IntroTitle,
+  CoffeeCardsList,
+} from "./styles";
+import { CoffeeCard } from "./components/CoffeeCard";
 
 export function Home() {
   return (
@@ -9,8 +17,13 @@ export function Home() {
       <main>
         <IntroMainContainer>
           <div>
-            <IntroTitle>Encontre o café perfeito para qualquer hora do dia</IntroTitle>
-            <IntroSubtitle>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</IntroSubtitle>
+            <IntroTitle>
+              Encontre o café perfeito para qualquer hora do dia
+            </IntroTitle>
+            <IntroSubtitle>
+              Com o Coffee Delivery você recebe seu café onde estiver, a
+              qualquer hora
+            </IntroSubtitle>
             <IntroItemsGrid>
               <IntroItems>
                 <IntroShoppingCartIcon>
@@ -42,22 +55,19 @@ export function Home() {
             <img src={ImageMakert} alt="" />
           </div>
         </IntroMainContainer>
-        <h1>Nossos Cafés</h1>
-        <CoffeeCard>
-          <CoffeeCardImage>
-            <img src={CafeExpresso} alt="" />
-          </CoffeeCardImage>
-          <CoffeeCardContainer>
-            <CoffeeCardTag>TRADICIONAL</CoffeeCardTag>
-            <h1>Expresso Tradicional</h1>
-            <span>O tradicional café feito com água quente e grãos moídos</span>
-            <span>R$ 9,90</span>
-            <button type="button">-</button>
-            <span>99</span>
-            <button type="button">+</button>
-            <button type="button"><ShoppingCart weight="fill" /></button>
-          </CoffeeCardContainer>
-        </CoffeeCard>
+        <CoffeeCardsList>
+          <h1>Nossos Cafés</h1>
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+        </CoffeeCardsList>
       </main>
     </>
   );
