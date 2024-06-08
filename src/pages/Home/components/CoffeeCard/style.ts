@@ -11,6 +11,8 @@ export const CoffeeCardContainer = styled.div`
   background: ${(props) => props.theme["base-card"]};
   img {
     margin-top: -1rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
 `;
 
@@ -97,6 +99,9 @@ export const CoffeeCardQuantityContainer = styled.div`
     color: ${(props) => props.theme["purple"]};
     line-height: 0;
     cursor: pointer;
+    :hover {
+      color: ${(props) => props.theme["purple-dark"]};
+    }
   }
 
   span {
