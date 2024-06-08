@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
+export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,6 +32,7 @@ const BaseButton = styled.button`
 export const ShoppingCartButton = styled(BaseButton)`
   background: ${(props) => props.theme["yellow-light"]};
   color: ${(props) => props.theme["yellow-dark"]};
+  font-size: 0.875rem;
 `;
 
 export const CurrentLocationButton = styled(BaseButton)`

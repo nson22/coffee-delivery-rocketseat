@@ -3,13 +3,13 @@ import Logo from "../../assets//cd-logo.svg";
 import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 import {
   CurrentLocationButton,
-  HeaderContainer,
+  HeaderWrapper,
   ShoppingCartButton,
 } from "./styles";
 
 export function Header() {
   return (
-    <HeaderContainer>
+    <HeaderWrapper>
       <NavLink to="/">
         <img src={Logo} alt="" />
       </NavLink>
@@ -26,6 +26,6 @@ export function Header() {
           </ShoppingCartButton>
         </NavLink>
       </nav>
-    </HeaderContainer>
+    </HeaderWrapper>
   );
 }

@@ -11,6 +11,8 @@ export const CoffeeCardContainer = styled.div`
   background: ${(props) => props.theme["base-card"]};
   img {
     margin-top: -1rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
 `;
 
