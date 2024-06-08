@@ -12,7 +12,7 @@ export const IntroTitle = styled.h1`
   color: ${(props) => props.theme["title"]};
   font-weight: bold;
   font-size: 3rem;
-  width: 588px;
+  width: 36.75rem;
   line-height: 1.3;
 `;
 
@@ -20,6 +20,7 @@ export const IntroSubtitle = styled.p`
   font-size: 1.25rem;
   height: 52px;
   margin-top: 1.25rem;
+  width: 36.75rem;
 `;
 
 export const IntroItemsGrid = styled.div`
@@ -28,6 +29,7 @@ export const IntroItemsGrid = styled.div`
   margin-top: 2.5rem;
   align-self: start;
   column-gap: 2.5rem;
+  width: 35.3125rem;
 `;
 
 export const IntroIconBase = styled.i`
