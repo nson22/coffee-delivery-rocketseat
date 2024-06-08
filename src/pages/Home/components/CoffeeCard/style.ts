@@ -9,10 +9,8 @@ export const CoffeeCardContainer = styled.div`
   width: 16rem;
   border-radius: 6px 36px;
   background: ${(props) => props.theme["base-card"]};
-  margin-top: 3.375rem;
-
   img {
-    margin-top: -3.5rem;
+    margin-top: -1rem;
   }
 `;
 
@@ -22,6 +20,7 @@ export const CoffeeCardDescrition = styled.div`
   justify-content: center;
   align-items: center;
   width: 13.5rem;
+  height: 16rem;
 `;
 
 export const CoffeeCardTagContainer = styled.div`
@@ -49,6 +48,8 @@ export const CoffeeCardTitle = styled.span`
   margin-top: 1rem;
   line-height: 1.3;
   color: ${(props) => props.theme["base-subtitle"]};
+  width: 13.5rem;
+  text-align: center;
 `;
 
 export const CoffeeCardTitleDescription = styled.span`
@@ -56,6 +57,7 @@ export const CoffeeCardTitleDescription = styled.span`
   font-size: 0.875rem;
   margin-top: 0.5rem;
   color: ${(props) => props.theme["base-label"]};
+  width: 13.5rem;
 `;
 
 export const CoffeeCardPriceContainer = styled.div`
@@ -109,7 +111,7 @@ export const CoffeeCardAddItem = styled.button`
   width: 2rem;
   height: 2rem;
   border-radius: 6px;
-  background: ${(props) => props.theme["purple"]};
+  background: ${(props) => props.theme["purple-dark"]};
   line-height: 0;
   color: ${(props) => props.theme["base-card"]};
   cursor: pointer;

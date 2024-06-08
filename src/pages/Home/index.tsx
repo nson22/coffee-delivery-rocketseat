@@ -7,7 +7,8 @@ import {
   IntroShoppingCartIcon,
   IntroSubtitle,
   IntroTitle,
-  CoffeeCardsList,
+  CoffeeCardsGrid,
+  CoffeeCardGridTitle,
 } from "./styles";
 import { CoffeeCard } from "./components/CoffeeCard";
 
@@ -55,19 +56,14 @@ export function Home() {
             <img src={ImageMakert} alt="" />
           </div>
         </IntroMainContainer>
-        <CoffeeCardsList>
-          <h1>Nossos Cafés</h1>
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-        </CoffeeCardsList>
+        <CoffeeCardGridTitle>Nossos cafés</CoffeeCardGridTitle>
+        <CoffeeCardsGrid>
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        <CoffeeCard />
+        </CoffeeCardsGrid>
       </main>
     </>
   );
